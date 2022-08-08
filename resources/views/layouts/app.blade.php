@@ -13,7 +13,7 @@
 <body class="subpixel-antialiased">
     <!-- Sidebar -->
     <div class="bottom-0 w-full md:w-auto sidenav p-3 flex md:flex-col justify-center align-center md:h-full">
-        <div class="shadow w-full rounded-full flex md:flex-col flex-row p-3 justify-evenly gap-3 py-3 items-center">
+        <div class="bg-white shadow w-full rounded-xl flex md:flex-col flex-row p-3 justify-evenly gap-3 py-3 items-center">
             <a href="{{ route('dashboard') }}">
                 <span
                     class="material-symbols-rounded menu-item {{ request()->route()->named('dashboard')? 'menu-item-active': '' }}">Dashboard</span>
@@ -37,7 +37,7 @@
         </div>
     </div>
     <!-- Content -->
-    <div class="bg-gray-100 content w-auto p-3 mx-24 my-20 flex flex-col justify-center">
+    <div class="content w-auto p-3 mx-4 md:mx-24 my-10 flex flex-col justify-center align-center">
         @yield('content')
     </div>
 </body>
