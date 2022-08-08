@@ -4,6 +4,7 @@
 
 @layer components {
     .card {
+<<<<<<< Updated upstream
       border-radius: theme('borderRadius.lg');
       box-shadow: theme('boxShadow.md');
       overflow: hidden;
@@ -30,6 +31,35 @@
         padding: theme('spacing.2') theme('spacing.2');
         border-radius: theme('borderRadius.full');
         color: theme('colors.gray.800');
+=======
+        border-radius: theme("borderRadius.lg");
+        box-shadow: theme("boxShadow.md");
+        overflow: hidden;
+        background-color: theme("colors.white");
+    }
+    .card-header {
+        background-color: theme("colors.gray.100");
+        border-bottom: 1px solid theme("colors.gray.200");
+        padding: theme("spacing.3");
+    }
+    .card-body {
+        padding: theme("spacing.3");
+    }
+    .badge {
+        font-size: theme("fontSize.sm");
+        font-weight: theme("fontWeight.medium");
+        padding: theme("spacing.1") theme("spacing.4");
+        border-radius: theme("borderRadius.md");
+        color: theme("colors.white");
+        background-color: theme("colors.blue.500");
+    }
+    .menu-item {
+        font-size: theme("fontSize.xl");
+        font-weight: theme("fontWeight.medium");
+        padding: theme("spacing.2") theme("spacing.2");
+        border-radius: theme("borderRadius.xl");
+        color: theme("colors.slate.600");
+>>>>>>> Stashed changes
         cursor: pointer;
     }
     .menu-item:hover{
@@ -39,11 +69,65 @@
     .badge-success{
         background-color: theme('colors.green.500');
     }
+<<<<<<< Updated upstream
     .badge-danger{
         background-color: theme('colors.red.500');
     }
     .badge-warning{
         background-color: theme('colors.orange.500');
+=======
+    .title {
+        font-size: theme("fontSize.5xl");
+        font-weight: theme("fontWeight.medium");
+    }
+    .subtitle {
+        font-size: theme("fontSize.lg");
+        font-weight: theme("fontWeight.medium");
+    }
+    .text {
+        font-size: theme("fontSize.sm")!important;
+        font-weight: theme("fontWeight.light")!important;
+    }
+    .sidenav {
+        position: fixed;
+        z-index: 1;
+        overflow-x: hidden;
+        padding-top: 20px;
+    }
+
+    .icon {
+        font-size: theme("fontSize.md");
+        font-weight: theme("fontWeight.medium");
+    }
+    .icon-sm{
+        font-size: theme("fontSize.sm");
+        font-weight: theme("fontWeight.medium");
+    }
+
+    .button {
+        font-size: theme("fontSize.sm");
+        font-weight: theme("fontWeight.medium");
+        padding: theme("spacing.1") theme("spacing.4");
+        border-radius: theme("borderRadius.md");
+        color: theme("colors.white");
+        background-color: theme("colors.emerald.500");
+        display: inline-flex;
+        align-items: center;
+        justify-content: start;
+    }
+
+    .button-outline {
+        font-size: theme("fontSize.sm");
+        font-weight: theme("fontWeight.medium");
+        padding: theme("spacing.1") theme("spacing.4");
+        border-radius: theme("borderRadius.md");
+        color: theme("colors.emerald.500");
+        background-color: theme("colors.white");
+    }
+
+    .badge-success {
+        background-color: theme("colors.emerald.600");
+>>>>>>> Stashed changes
     }
     .badge-info{
         background-color: theme('colors.blue.500');
