@@ -16,6 +16,30 @@
     .card-body {
         padding: theme("spacing.3");
     }
+    .card-footer {
+        background-color: theme("colors.gray.100");
+        border-top: 1px solid theme("colors.gray.200");
+        padding: theme("spacing.3");
+    }
+
+    .card-dark {
+        background-color: theme("colors.slate.800");
+        color: theme("colors.slate.200");
+    }
+    .card-header-dark {
+        background-color: theme("colors.slate.800");
+        color: theme("colors.slate.200");
+    }
+    .card-content-dark {
+        background-color: theme("colors.slate.800");
+        color: theme("colors.slate.200");
+    }
+    .card-footer-dark {
+        background-color: theme("colors.slate.800");
+        color: theme("colors.slate.200");
+    }
+
+
     .badge {
         font-size: theme("fontSize.sm");
         font-weight: theme("fontWeight.medium");
