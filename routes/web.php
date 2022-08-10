@@ -2,6 +2,8 @@
 
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\PlantsController;
+use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\SettingsController;
 use App\Http\Controllers\StatisticsController;
 use Illuminate\Support\Facades\Route;
 
@@ -19,3 +21,5 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', DashboardController::class)->name('dashboard');
 Route::get('statistics', StatisticsController::class)->name('statistics');
 Route::get('plants', PlantsController::class)->name('plants');
+Route::get('profile', ProfileController::class)->name('profile');
+Route::get('settings', SettingsController::class)->name('settings');

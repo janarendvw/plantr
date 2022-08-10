@@ -17,40 +17,42 @@
             <a
                 href="{{ route('dashboard') }}"
                 class="flex md:flex-row items-center flex-col-reverse gap-2">
-                <span class="menu-indicator {{ request()->route()->named('dashboard')? 'menu-indicator-active': '' }}"></span>
+                <span class="menu-indicator md:h-4 md:w-1 w-4 h-1 {{ request()->route()->named('dashboard')? 'menu-indicator-active': '' }}"></span>
                 <span
-                    class="material-symbols-rounded"
+                    class="material-symbols-rounded {{ request()->route()->named('dashboard')? 'dark:text-white': '' }}"
                 >Dashboard
                 </span>
             </a>
             <a
                 href="{{ route('statistics') }}"
                 class="flex md:flex-row items-center flex-col-reverse gap-2">
-                <span class="menu-indicator {{ request()->route()->named('statistics')? 'menu-indicator-active': '' }}"></span>
+                <span class="menu-indicator md:h-4 md:w-1 w-4 h-1 {{ request()->route()->named('statistics')? 'menu-indicator-active': '' }}"></span>
                 <span
-                    class="material-symbols-rounded">Insights</span>
+                    class="material-symbols-rounded {{ request()->route()->named('statistics')? 'dark:text-white': '' }}">Insights</span>
 
             </a>
             <a
                 href="{{ route('plants') }}"
                 class="flex md:flex-row items-center flex-col-reverse gap-2">
-                <span class="menu-indicator {{ request()->route()->named('plants')? 'menu-indicator-active': '' }}"></span>
+                <span class="menu-indicator md:h-4 md:w-1 w-4 h-1 {{ request()->route()->named('plants')? 'menu-indicator-active': '' }}"></span>
                 <span
-                    class="material-symbols-rounded">Potted_Plant</span>
+                    class="material-symbols-rounded {{ request()->route()->named('plants')? 'dark:text-white': '' }}">Potted_Plant</span>
 
             </a>
             <a
+                href="{{ route('profile') }}"
                 class="flex md:flex-row items-center flex-col-reverse gap-2">
-                <span class="menu-indicator {{ request()->route()->named('')? 'menu-indicator-active': '' }}"></span>
+                <span class="menu-indicator md:h-4 md:w-1 w-4 h-1 {{ request()->route()->named('profile')? 'menu-indicator-active': '' }}"></span>
                 <span
-                    class="material-symbols-rounded ">Person</span>
+                    class="material-symbols-rounded {{ request()->route()->named('profile')? 'dark:text-white': '' }}">Person</span>
 
             </a>
             <a
+                href="{{ route('settings') }}"
                 class="flex md:flex-row items-center flex-col-reverse gap-2">
-                <span class="menu-indicator {{ request()->route()->named('')? 'menu-indicator-active': '' }}"></span>
+                <span class="menu-indicator md:h-4 md:w-1 w-4 h-1 {{ request()->route()->named('settings')? 'menu-indicator-active': '' }}"></span>
                 <span
-                    class="material-symbols-rounded">Settings</span>
+                    class="material-symbols-rounded {{ request()->route()->named('settings')? 'dark:text-white': '' }}">Settings</span>
 
             </a>
         </div>
